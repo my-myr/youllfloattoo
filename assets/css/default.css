@@ -1,0 +1,276 @@
+img{
+	width:100%;
+}
+
+.sm-body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black;
+	min-height: 300vh;
+	padding-top: 300px;
+	overflow-x: hidden;
+	/* background:url('/Volumes/SAM W DSGN/y2s2/Stuffmovespaper/It website/assets/images/teeth2.gif') repeat-y 100% 100% fixed;
+    background-size: cover; */
+}
+
+
+
+@keyframes float {
+  0%   {margin-top: 0;}
+  50%  {margin-top:100px;}
+  100% {margin-top: 0;}
+}
+
+.float1{
+  animation: float 3s infinite;
+	animation-delay: 0ms;
+}
+
+.sm-balloon{
+
+}
+
+.sm-balloonwidth{
+	width:10%;
+}
+
+.sm-balloon--row{
+	width:100%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.sm-balloon--rowleft{
+	width:100%;
+	margin-left:-100px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+.sm-balloon--1 img {
+	animation: float 3s 1s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+
+}
+
+.sm-balloon--2 img {
+	animation: float 2s 0s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+
+}
+
+.sm-balloon--3 img {
+	animation: float 3s 0.5s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--4 img {
+	animation: float 4s 0s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--5 img {
+	animation: float 3s 0s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+.sm-balloon--6 img {
+	animation: float 1.5s 0s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--7 img {
+	animation: float 1.5s 0.5s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--8 img {
+	animation: float 4s 0.5s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--9  img {
+	animation: float 2s 1s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--10  img {
+	animation: float 2s 0.5s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.sm-balloon--11  img {
+	animation: float 1s 0.8s infinite;
+	animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+/* .sm-testred{
+	background:;
+}
+
+.sm-testblue{
+	background-color:;
+} */
+
+.sm-margin--small {
+	margin-top: 90vh;
+}
+
+.sm-margin--medium {
+	padding-top: 140vh;
+}
+
+.sm-margin--large {
+	margin-top:200vh;
+}
+
+.sm-marginleft--1 {
+	margin-left:0%;
+}
+
+.sm-marginleft--2 {
+	margin-left:10%;
+}
+
+.sm-marginleft--3 {
+	margin-left:20%;
+}
+
+.sm-marginleft--4 {
+	margin-left:30%;
+}
+
+.sm-marginleft--5 {
+	margin-left:40%;
+}
+
+.sm-marginleft--6 {
+	margin-left:50%;
+}
+
+.sm-marginleft--7 {
+	margin-left:60%;
+}
+
+.sm-marginleft--8 {
+	margin-left:70%;
+}
+
+.sm-marginleft--9 {
+	margin-left:80%;
+}
+
+.sm-marginleft--10 {
+	margin-left:90%;
+}
+
+.sm-marginleft--11 {
+	margin-left:100%;
+}
+
+@keyframes sm-balloonleave {
+  0%   	{margin-left: 0%;}
+  100%  {margin-left: -100%;}
+}
+
+.sm-body--end .sm-balloon{
+  animation: sm-balloonleave 2s;
+	position: static;
+	animation-fill-mode: forwards;
+	;
+	overflow: visible;
+}
+
+@keyframes sm-balloonleave2 {
+  0%   	{margin-left: 0%;}
+  100%  {margin-left: 100%;}
+}
+
+.sm-body--end .sm-balloon2{
+  animation: sm-balloonleave2 2s;
+	position: static;
+	animation-fill-mode: forwards;
+	;
+	overflow: visible;
+}
+
+
+.sm-body--end .sm-gif{
+visibility: visible;
+animation: sm-gif-layer 2s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+}
+
+.sm-body--end .sm-end-video-laugh {
+	display: block;
+}
+
+.sm-end-video-laugh {
+	display: none;
+}
+
+.sm-gif{
+	bottom:0px;
+	background: red;
+	position: fixed;
+	height:100%;
+	visibility: hidden;
+	z-index: -1;
+
+}
+
+@keyframes sm-gif-layer {
+  0%   	{z-index: -1;}
+  100%  {z-index: 99;}
+}
+
+
+#myaudio{
+	opacity:0.1;
+	position: fixed;
+	background: red;
+	z-index: 100;
+}
+
+#myaudio:hover {
+	opacity: 1;
+}
+
+#fog {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+	z-index: 100;
+}
+  #fog:before, #fog:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 300%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+
+  }
+  #fog:before {
+		opacity: 0.9;
+    background-image: url('fog3.png');
+    animation: drift 120s linear 0s infinite;
+  }
+  #fog:after {
+		opacity:0.9;
+    background-image: url('fog4.png');
+    animation: drift 50s linear 0s infinite;
+  }
+  @keyframes drift {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-200vw, 0, 0); }
+  }
